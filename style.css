@@ -1,0 +1,72 @@
+:root {
+  --primaryColor: black;
+  --secondaryColor: rgb(44, 42, 42);
+  --thirdColor: rgb(75, 73, 73);
+  --fourthColor: rgb(68, 165, 76);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+body {
+  font-family: Inter;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ******************** */
+.container {
+  min-height: 100vh;
+  background-color: var(--primaryColor);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--secondaryColor);
+  width: 90%;
+  margin: auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  height: auto;
+  padding: 20px;
+}
+.card img {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+}
+.card h1 {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 10px 0;
+}
+.card label {
+  color: var(--fourthColor);
+}
+.card p {
+  margin: 20px 0;
+}
+.social-media div {
+  background-color: var(--thirdColor);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.social-media div:hover {
+  background-color: var(--fourthColor);
+  color: var(--primaryColor);
+  cursor: url("./assets/images/hand-pointer-svgrepo-com.svg"), pointer;
+}
