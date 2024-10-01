@@ -16,6 +16,7 @@
 
 body {
   font-family: Inter;
+  color: white;
 }
 a {
   text-decoration: none;
@@ -26,7 +27,6 @@ a {
 .container {
   min-height: 100vh;
   background-color: var(--primaryColor);
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,8 +44,9 @@ a {
 }
 .card img {
   border-radius: 50%;
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
 }
 .card h1 {
   font-weight: 600;
@@ -58,15 +59,16 @@ a {
 .card p {
   margin: 20px 0;
 }
+
 .social-media div {
   background-color: var(--thirdColor);
   padding: 20px;
-  margin: 20px 0;
   border-radius: 10px;
   font-weight: 500;
+  margin: 20px 0;
 }
 .social-media div:hover {
   background-color: var(--fourthColor);
   color: var(--primaryColor);
-  cursor: url("./assets/images/hand-pointer-svgrepo-com.svg"), pointer;
+  cursor: pointer;
 }
